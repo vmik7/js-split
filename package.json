@@ -1,0 +1,27 @@
+{
+  "name": "js-split",
+  "version": "1.0.0",
+  "description": "This is my custom realization of split function in JS",
+  "main": "split.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmik7/js-split.git"
+  },
+  "keywords": [
+    "js",
+    "split"
+  ],
+  "author": "vmik7 <vmik7@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmik7/js-split/issues"
+  },
+  "homepage": "https://github.com/vmik7/js-split#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.0"
+  }
+}

@@ -17,7 +17,7 @@ describe("Split", function () {
         });
     });
 
-    describe("divider: multi-character", function () {
+    describe("divider: multi-character string", function () {
         it('"aaababaaaaaababbabbabaaaaaababaaaaaaaabab", divider: "bab"', function () {
             let str = "aaababaaaaaababbabbabaaaaaababaaaaaaaabab";
             assert.deepEqual(str.split("bab"), split(str, "bab"));
@@ -34,6 +34,9 @@ describe("Split", function () {
             let str = "";
             assert.deepEqual(str.split("sostenuto"), split(str, "sostenuto"));
         });
+    });
+
+    describe("divider: empty string", function () {
         it('"", divider: ""', function () {
             let str = "";
             assert.deepEqual(str.split(""), split(str, ""));
@@ -42,6 +45,9 @@ describe("Split", function () {
             let str = "abra";
             assert.deepEqual(str.split(""), split(str, ""));
         });
+    });
+
+    describe("divider: none", function () {
         it('"", divider: none', function () {
             let str = "";
             assert.deepEqual(str.split(), split(str));
